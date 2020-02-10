@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Texto -->
+    <dimen name="titulo">32sp</dimen>
+    <dimen name="subtitulo">24sp</dimen>
+    <dimen name="texto_toolBar">24sp</dimen>
+    <dimen name="texto_textView">16sp</dimen>
+    <dimen name="texto_EditText">16sp</dimen>
+    <dimen name="central">50sp</dimen>
+    <dimen name="medio">86dp</dimen>
+
+
+    <!-- Widgets -->
+    <dimen name="altura_boton">30dp</dimen>
+    <dimen name="etiqueta">16sp</dimen>
+    <dimen name="tam_et_multilinea">80dp</dimen>
+    <dimen name="card_radio">4dp</dimen>
+    <dimen name="elevation">4dp</dimen>
+
+
+</resources>
