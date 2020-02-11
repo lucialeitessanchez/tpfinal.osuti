@@ -2,4 +2,10 @@
     <string name="app_name">osuti movil</string>
     <string name="ingresar">Ingresar</string>
     <string name="newuser">Nuevo Usuario</string>
+    <string name="ingnomape">Ingrese Nombre y Apellido</string>
+    <string name="ingnumeroafi">Ingrese numero de afiliado</string>
+    <string name="email">Ingrese E-mail</string>
+    <string name="pass">Contraseña</string>
+    <string name="repass">Re-ingrese contraseña</string>
+    <string name="REGISTRAR">REGISTRAR USUARIO</string>
 </resources>

@@ -8,6 +8,7 @@
     <dimen name="texto_EditText">16sp</dimen>
     <dimen name="central">50sp</dimen>
     <dimen name="medio">86dp</dimen>
+    <dimen name="medioposta">106dp</dimen>
 
 
     <!-- Widgets -->

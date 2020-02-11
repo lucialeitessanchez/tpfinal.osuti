@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medio"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -11,7 +12,7 @@
         android:id="@+id/Bienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/medio"
+        android:layout_marginLeft="@dimen/medioposta"
         android:layout_marginTop="@dimen/central"
         android:text="¡Bienvenido!"
         android:textSize="@dimen/titulo" />
@@ -24,19 +25,28 @@
         android:layout_marginTop="@dimen/etiqueta"
         android:layout_marginRight="@dimen/central"
         app:srcCompat="@drawable/logoosuti" />
-    <Button
-        android:id="@+id/botonIngresar"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/etiqueta"
-        android:layout_marginTop="@dimen/central"
-        android:text="@string/ingresar"/>
-    <Button
-        android:id="@+id/botonNuevouser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/newuser"/>
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/central">
 
+        <Button
+            android:id="@+id/botonIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/central"
+            android:layout_marginTop="@dimen/central"
+            android:text="@string/ingresar" />
 
+        <Button
+            android:id="@+id/botonNuevouser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/central"
+            android:text="@string/newuser" />
+
+    </LinearLayout>
 
 </LinearLayout>
