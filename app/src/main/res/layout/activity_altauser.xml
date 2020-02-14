@@ -40,7 +40,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etnroafiliado"
+            android:id="@+id/evnroafiliado"
             android:inputType="number"
             android:maxLength="5"
             android:hint="20000"/>
