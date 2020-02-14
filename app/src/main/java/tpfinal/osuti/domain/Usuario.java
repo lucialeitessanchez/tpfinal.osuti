@@ -12,8 +12,9 @@ import java.util.Objects;
 @Entity
 public class Usuario implements Parcelable{
 
-    @PrimaryKey(autoGenerate = true)
+
     private String nombreyapellido;
+    @PrimaryKey(autoGenerate = true)
     private Integer numeroafiliado;
     private String email;
     private String contraseña;
