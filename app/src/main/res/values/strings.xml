@@ -8,4 +8,11 @@
     <string name="pass">Contraseña</string>
     <string name="repass">Re-ingrese contraseña</string>
     <string name="REGISTRAR">REGISTRAR USUARIO</string>
+    <string name="nombreMedico">Nombre</string>
+    <string name="Especialidad">Especialidad</string>
+    <string name="direccion">Direcciòn</string>
+    <string name="horarios">Horarios de ateciòn</string>
+    <string name="telefono">Telefono</string>
+
+
 </resources>
