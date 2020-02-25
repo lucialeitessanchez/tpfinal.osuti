@@ -21,6 +21,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
             super(itemView);
             nombre=(TextView)itemView.findViewById(R.id.tvnombre);
             especialidad=(TextView)itemView.findViewById(R.id.tvEspecialidad);
+            telefono=(TextView)itemView.findViewById(R.id.tvtelefonomedic);
             direccion=(TextView)itemView.findViewById(R.id.tvdireccion);
             horarios=(TextView)itemView.findViewById(R.id.tvhorarios);
         }
@@ -46,8 +47,14 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdap
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.nombre.setText(medicoLista.get(position).getNombre());
         holder.especialidad.setText(medicoLista.get(position).getEspecialidad());
-        holder.direccion.setText(medicoLista.get(position).ge());
-        holder.nombre.setText(medicoLista.get(position).getNombre());
+        holder.telefono.setText(medicoLista.get(position).getTelefono());
+        holder.direccion.setText(medicoLista.get(position).getDireccion());
+        holder.horarios.setText(medicoLista.get(position).getHorarios_de_atencion());
 
+    }
+
+    @Override
+    public int getItemCount() {
+        return medicoLista.size();
     }
 }

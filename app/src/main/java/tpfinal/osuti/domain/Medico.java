@@ -5,17 +5,18 @@ import java.util.concurrent.TimeUnit;
 public class Medico {
     private String nombre;
     private String especialidad;
-    private Long telefono;
+    private Integer telefono;
     private String direccion;
-    private TimeUnit horarios_de_atencion;
+    private int horarios_de_atencion;
 
-    public Medico() {
-    }
 
-    public Medico(String nombre, String especialidad, Long telefono, TimeUnit horarios_de_atencion) {
+
+
+    public Medico(String nombre, String especialidad, Integer telefono, String direccion, int horarios_de_atencion) {
         this.nombre = nombre;
         this.especialidad = especialidad;
         this.telefono = telefono;
+        this.direccion = direccion;
         this.horarios_de_atencion = horarios_de_atencion;
     }
 
@@ -35,19 +36,27 @@ public class Medico {
         this.especialidad = especialidad;
     }
 
-    public Long getTelefono() {
+    public Integer getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(Long telefono) {
+    public void setTelefono(Integer telefono) {
         this.telefono = telefono;
     }
 
-    public TimeUnit getHorarios_de_atencion() {
+    public int getHorarios_de_atencion() {
         return horarios_de_atencion;
     }
 
-    public void setHorarios_de_atencion(TimeUnit horarios_de_atencion) {
+    public void setHorarios_de_atencion(Integer horarios_de_atencion) {
         this.horarios_de_atencion = horarios_de_atencion;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 }
