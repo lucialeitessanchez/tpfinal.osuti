@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Menuopciones">
+
+    <item android:id="@+id/Turnonuevo"
+        android:title="@string/Turnonuevo"/>
+
+    <item android:id="@+id/TurnoModif"
+        android:title="@string/Modifturno"/>
+
+    <item android:id="@+id/Turnobaja"
+        android:title="@string/ELiminarturno"/>
+
+    
+
+</menu>

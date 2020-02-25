@@ -13,6 +13,9 @@
     <string name="direccion">Direcciòn</string>
     <string name="horarios">Horarios de ateciòn</string>
     <string name="telefono">Telefono</string>
+    <string name="Turnonuevo">Nuevo Turno</string>
+    <string name="Modifturno">Modificar Turno</string>
+    <string name="ELiminarturno">Eliminar Turno</string>
 
 
 </resources>
