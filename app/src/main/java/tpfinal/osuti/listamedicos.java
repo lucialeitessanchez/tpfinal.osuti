@@ -1,10 +1,12 @@
 package tpfinal.osuti;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +19,12 @@ public class listamedicos extends AppCompatActivity {
     private RecyclerViewAdaptador adaptadorMedico;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listamedicos);
+
 
         recyclerViewMedico=(RecyclerView)findViewById(R.id.recyclerMedico);
         recyclerViewMedico.setLayoutManager(new LinearLayoutManager(this));
@@ -31,7 +35,8 @@ public class listamedicos extends AppCompatActivity {
     }
 
 
-   public List<Medico> obtenerMedicos(){
+
+    public List<Medico> obtenerMedicos(){
         List<Medico> medico=new ArrayList<>();
         medico.add(new Medico("Paula Castillo","pediatra", 4607046,"Av.Aristobulo del Valle 6634",8-20));
        medico.add(new Medico("Federico Gauchat","Clinico",4607046,"Av. Aristóbulo del Valle 6634",8-20));
