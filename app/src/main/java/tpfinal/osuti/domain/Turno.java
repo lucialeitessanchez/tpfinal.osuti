@@ -3,31 +3,28 @@ package tpfinal.osuti.domain;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import java.sql.Time;
-import java.util.Date;
-
 @Entity
 public class Turno {
 
     @PrimaryKey(autoGenerate = true)
     private Integer idTurno;
     private Integer nroafiliado;
-    private Date fecha;
-    private Time hora;
+   // private Date fecha;
+    private int hora;
 
     public Turno() {
     }
 
-    public Turno(Integer idTurno, Integer nroafiliado, Date fecha, Time hora) {
+    public Turno(Integer idTurno, Integer nroafiliado, /*Date fecha,*/ int hora) {
         this.idTurno = idTurno;
         this.nroafiliado = nroafiliado;
-        this.fecha = fecha;
+       // this.fecha = fecha;
         this.hora = hora;
     }
 
-    public Turno(Integer nroafiliado, Date fecha, Time hora) {
+    public Turno(Integer nroafiliado, /*Date fecha,*/ int hora) {
         this.nroafiliado = nroafiliado;
-        this.fecha = fecha;
+        //this.fecha = fecha;
         this.hora = hora;
     }
 
@@ -47,7 +44,7 @@ public class Turno {
         this.nroafiliado = nroafiliado;
     }
 
-    public Date getFecha() {
+    /*public Date getFecha() {
         return fecha;
     }
 
@@ -57,9 +54,9 @@ public class Turno {
 
     public Time getHora() {
         return hora;
-    }
+    }*/
 
-    public void setHora(Time hora) {
+    public void setHora(int hora) {
         this.hora = hora;
     }
 

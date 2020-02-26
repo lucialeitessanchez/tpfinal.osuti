@@ -1,20 +1,41 @@
 package tpfinal.osuti;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toolbar;
 
 public class loginuser extends AppCompatActivity {
+    EditText usuario,contraseña;
+    Button ingresarLogin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loginuser);
+
+
         //me faltan las declaraciones del usuario y contraseña y la validacion
+     usuario=(EditText)findViewById(R.id.etuser);
+     contraseña=(EditText)findViewById(R.id.editTextPassuser);
+     ingresarLogin=(Button)findViewById(R.id.btningresaruser);
+
+     ingresarLogin.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             //que valide y que despues vaya a la pantalla del menu usuario
+         }
+     });
+
     }
 
     @Override
