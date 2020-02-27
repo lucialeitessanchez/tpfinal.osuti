@@ -18,8 +18,69 @@
         android:layout_marginLeft="@dimen/medioposta"
         android:textColor="@color/colorOsu2"
         />
-     <EditText
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/medio"
+        android:layout_marginLeft="@dimen/medio">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medio"
+            android:text="Id turno:"
+            android:textSize="@dimen/etiqueta"
+            android:textColor="@color/colorOsu1"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ETidTurno"
+            />
+
+        <TextView
+            android:layout_width="296dp"
+            android:layout_height="33dp"
+            android:text="@string/ingnumeroafi"
+            android:textColor="@color/colorOsu1"
+            android:textSize="@dimen/etiqueta"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ETnroafiliadoabm"
+            android:inputType="number"
+            android:maxLength="5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dia del turno"
+            android:textSize="@dimen/etiqueta"
+            android:textColor="@color/colorOsu1"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:id="@+id/ETdateabm"
+            android:ems="10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horario del turno"
+            android:textSize="@dimen/etiqueta"
+            android:textColor="@color/colorOsu1"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ETHoraadm"
+            android:inputType="number"
+            android:maxLength="4"
+            android:hint="Solo numeros sin espacios ni puntos"
+            />
+    </LinearLayout>
+
+
 </RelativeLayout>

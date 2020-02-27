@@ -93,8 +93,8 @@ public class Turno implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest,int flags){
         dest.writeInt(idTurno);
-        dest.writeLong(fecha.getTime());
         dest.writeInt(nroafiliado);
+        dest.writeLong(fecha.getTime());
         dest.writeInt(hora);
         dest.writeList(itemsTurnoList);
 
@@ -102,8 +102,8 @@ public class Turno implements Parcelable {
 
     private void readFromParcel(Parcel in){
         this.idTurno=in.readInt();
-        this.fecha=new Date(in.readLong());
         this.nroafiliado=in.readInt();
+        this.fecha=new Date(in.readLong());
         this.hora=in.readInt();
         in.readList(this.itemsTurnoList, this.getClass().getClassLoader());
     }
