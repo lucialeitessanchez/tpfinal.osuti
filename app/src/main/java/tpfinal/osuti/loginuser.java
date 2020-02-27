@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class loginuser extends AppCompatActivity {
@@ -48,7 +49,7 @@ public class loginuser extends AppCompatActivity {
     //tendria que hacer que valide el usuario y despues de eso recien mostrar los items
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Intent intent;
+        Intent intent,intent2,intent3;
         switch (item.getItemId()){
             case (R.id.item_listamedicos):
                 intent = new Intent(loginuser.this,listamedicos.class);
@@ -62,11 +63,17 @@ public class loginuser extends AppCompatActivity {
 
             case (R.id.item_turnos):
                 //hacer lo de turnos
+                intent3 = new Intent(loginuser.this,abmTurno.class);
+                startActivity(intent3);
                 return true;
+
+            default:
+                Toast.makeText(this,". . . . ", Toast.LENGTH_LONG).show();
+                return super.onOptionsItemSelected(item);
 
         }
 
-        return super.onOptionsItemSelected(item);
+
     }
 
 

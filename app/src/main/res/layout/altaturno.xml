@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvNewturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Turno"
+        android:textSize="@dimen/titulo"
+        android:layout_marginTop="@dimen/medioposta"
+        android:layout_marginLeft="@dimen/medioposta"
+        android:textColor="@color/colorOsu2"
+        />
+     <EditText
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+</RelativeLayout>

@@ -23,6 +23,16 @@ public class Turno implements Parcelable {
     @Ignore
     private List<ItemsTurno> itemsTurnoList;
 
+    public List<ItemsTurno> getItemsTurnoList() {
+        return itemsTurnoList;
+    }
+
+    public void setItemsTurnoList(List<ItemsTurno> itemsTurnoList) {
+        this.itemsTurnoList = itemsTurnoList;
+    }
+
+
+
     public Turno() {
     }
 
@@ -106,5 +116,6 @@ public class Turno implements Parcelable {
             return new Turno[size];
         }
     };
+
 
 }

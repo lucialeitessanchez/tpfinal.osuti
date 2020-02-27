@@ -16,14 +16,17 @@ public interface TurnoDao {
     List<Turno> getAll();
 
     @Insert
-    void insert(Turno turno);
-
-    @Insert
-    void insertAll(Turno... turnos);
+    void crearTurno(Turno turno);
 
     @Delete
-    void delete(Turno turno);
+    void borrarTurno(Turno turno);
 
     @Update
-    void actualizar(Turno turno);
+    void actualizarTurno(Turno turno);
+
+    @Query("SELECT * FROM turno")
+    List<Turno> buscarTurnos();
+
+    @Query("SELECT * FROM Turno WHERE idTurno = :id")
+    Turno buscarTurnoPorID(Integer id);
 }

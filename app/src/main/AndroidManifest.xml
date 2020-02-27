@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loginuser"></activity>
+        <activity android:name=".abmTurno"></activity>
+        <activity android:name=".loginuser" />
         <activity android:name=".listamedicos" />
         <activity
             android:name=".SplashScreen"
@@ -23,8 +24,7 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".altauser" />
-        <activity android:name=".UsuarioListActivity"/>
-
+        <activity android:name=".UsuarioListActivity" />
     </application>
 
 </manifest>
