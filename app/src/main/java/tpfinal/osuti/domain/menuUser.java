@@ -1,46 +1,24 @@
-package tpfinal.osuti;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
+package tpfinal.osuti.domain;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import tpfinal.osuti.domain.menuUser;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class loginuser extends AppCompatActivity {
-    EditText usuario,contraseña;
-    Button ingresarLogin;
+import tpfinal.osuti.R;
+import tpfinal.osuti.abmTurno;
+import tpfinal.osuti.listamedicos;
+import tpfinal.osuti.loginuser;
 
+public class menuUser extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loginuser);
-
-
-        //me faltan las declaraciones del usuario y contraseña y la validacion
-     usuario=(EditText)findViewById(R.id.etuser);
-     contraseña=(EditText)findViewById(R.id.editTextPassuser);
-     ingresarLogin=(Button)findViewById(R.id.btningresaruser);
-
-     ingresarLogin.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick(View v) {
-             //que valide y que despues vaya a la pantalla del menu usuario
-            Intent i;
-            i= new Intent(loginuser.this, menuUser.class);
-            startActivity(i);
-         }
-     });
 
     }
 
@@ -57,7 +35,7 @@ public class loginuser extends AppCompatActivity {
         Intent intent,intent2,intent3;
         switch (item.getItemId()){
             case (R.id.item_listamedicos):
-                intent = new Intent(loginuser.this,listamedicos.class);
+                intent = new Intent(menuUser.this, listamedicos.class);
                 startActivity(intent);
                 return true;
 
@@ -68,7 +46,7 @@ public class loginuser extends AppCompatActivity {
 
             case (R.id.item_turnos):
                 //hacer lo de turnos
-                intent3 = new Intent(loginuser.this,abmTurno.class);
+                intent3 = new Intent(menuUser.this, abmTurno.class);
                 startActivity(intent3);
                 return true;
 
@@ -80,6 +58,4 @@ public class loginuser extends AppCompatActivity {
 
 
     }
-
-
 }

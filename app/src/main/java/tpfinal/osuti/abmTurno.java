@@ -2,6 +2,8 @@ package tpfinal.osuti;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
@@ -36,17 +38,21 @@ public class abmTurno extends AppCompatActivity {
         btnAlta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Turno turno = new Turno();
+                Turno turnoAlta = new Turno();
 
+                //seteo de variables
                 int intVal = Integer.parseInt(idTurno.getText().toString());
-                turno.setIdTurno(intVal);
+                turnoAlta.setIdTurno(intVal);
+                turnoAlta.setNroafiliado(Integer.parseInt(nroAfiliado.getText().toString()));
+                turnoAlta.setHora(Integer.parseInt(hora.getText().toString()));
 
-                turno.setNroafiliado(Integer.parseInt(nroAfiliado.getText().toString()));
-
-
+                Intent intentResultado = new Intent();
+                setResult(Activity.RESULT_OK, intentResultado);
+                finish();
 
             }
         });
+
 
         btnModif.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // QUE VAYA AL MENU PRINCIPAL
+               Intent i2 = new Intent (MainActivity.this,loginuser.class);
+               startActivity(i2);// QUE VAYA AL MENU PRINCIPAL
             }
         });
 

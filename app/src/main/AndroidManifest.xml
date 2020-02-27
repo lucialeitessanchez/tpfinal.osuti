@@ -25,6 +25,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".altauser" />
         <activity android:name=".UsuarioListActivity" />
+        <activity android:name=".domain.menuUser" />
     </application>
 
 </manifest>

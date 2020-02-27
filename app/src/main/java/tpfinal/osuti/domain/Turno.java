@@ -18,8 +18,10 @@ public class Turno implements Parcelable {
     @PrimaryKey(autoGenerate = true)
     private Integer idTurno;
     private Integer nroafiliado;
-    private Date fecha;
+    //private Date fecha;
     private int hora;
+
+
     @Ignore
     private List<ItemsTurno> itemsTurnoList;
 
@@ -31,6 +33,9 @@ public class Turno implements Parcelable {
         this.itemsTurnoList = itemsTurnoList;
     }
 
+    public int getHora() {
+        return hora;
+    }
 
 
     public Turno() {
@@ -94,7 +99,7 @@ public class Turno implements Parcelable {
     public void writeToParcel(Parcel dest,int flags){
         dest.writeInt(idTurno);
         dest.writeInt(nroafiliado);
-        dest.writeLong(fecha.getTime());
+        //dest.writeLong(fecha.getTime());
         dest.writeInt(hora);
         dest.writeList(itemsTurnoList);
 
@@ -103,7 +108,7 @@ public class Turno implements Parcelable {
     private void readFromParcel(Parcel in){
         this.idTurno=in.readInt();
         this.nroafiliado=in.readInt();
-        this.fecha=new Date(in.readLong());
+       // this.fecha=new Date(in.readLong());
         this.hora=in.readInt();
         in.readList(this.itemsTurnoList, this.getClass().getClassLoader());
     }

@@ -17,7 +17,7 @@ public class ItemsTurno implements Parcelable{
 
     @ForeignKey(entity = Turno.class,parentColumns = "id", childColumns = "idTurno",onUpdate = ForeignKey.CASCADE)
     private Integer idTurno;
-    private Turno turno;
+    //private Turno turno;
     private Integer nroafiliado;
 
     public Integer getId() {
@@ -36,13 +36,9 @@ public class ItemsTurno implements Parcelable{
         this.idTurno = idTurno;
     }
 
-    public Turno getTurno() {
-        return turno;
-    }
+    //public Turno getTurno() {return turno;}
 
-    public void setTurno(Turno turno) {
-        this.turno = turno;
-    }
+    //public void setTurno(Turno turno) {this.turno = turno;}
 
     public Integer getNroafiliado() {
         return nroafiliado;
@@ -52,10 +48,10 @@ public class ItemsTurno implements Parcelable{
         this.nroafiliado = nroafiliado;
     }
 
-    @Override
+    /*@Override
     public  String toString(){
         return nroafiliado + "turno" + turno.getIdTurno();
-    }
+    }*/
 
 
 
@@ -88,14 +84,14 @@ public class ItemsTurno implements Parcelable{
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(id);
         dest.writeLong(idTurno);
-        dest.writeParcelable(turno, flags);
+       // dest.writeParcelable(turno, flags);
         dest.writeInt(nroafiliado);
     }
 
     private void readFromParcel(Parcel in) {
         this.id = in.readInt();
         this.idTurno = in.readInt();
-        this.turno = in.readParcelable(Turno.class.getClassLoader());
+        //this.turno = in.readParcelable(Turno.class.getClassLoader());
         this.nroafiliado = in.readInt();
 
     }
