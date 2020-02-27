@@ -11,8 +11,9 @@ import tpfinal.osuti.domain.Turno;
 import tpfinal.osuti.domain.Usuario;
 
 
-@Database(entities ={Usuario.class, Turno.class}, version = 1 )
+@Database(entities ={Usuario.class, Turno.class,ItemsTurno.class}, version = 1 )
 public abstract class UsuarioAppDB extends RoomDatabase {
     public abstract UsuarioDao usuarioDao();
     public abstract TurnoDao turnoDao();
+    public abstract ItemsTurnoDao itemsTurnoDao();
 }
