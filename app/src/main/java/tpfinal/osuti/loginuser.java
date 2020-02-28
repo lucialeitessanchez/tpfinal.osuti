@@ -1,20 +1,13 @@
 package tpfinal.osuti;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-import android.widget.Toolbar;
-
-import tpfinal.osuti.domain.menuUser;
 
 public class loginuser extends AppCompatActivity {
     EditText usuario,contraseña;
@@ -36,23 +29,21 @@ public class loginuser extends AppCompatActivity {
          @Override
          public void onClick(View v) {
              //que valide y que despues vaya a la pantalla del menu usuario
+             //if(){
             Intent i;
-            i= new Intent(loginuser.this, menuUser.class);
+            i= new Intent(loginuser.this, menuUsuario.class);
             startActivity(i);
+             //}
          }
      });
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menusuario,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+
 
 
     //tendria que hacer que valide el usuario y despues de eso recien mostrar los items
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent intent,intent2,intent3;
         switch (item.getItemId()){
@@ -80,6 +71,6 @@ public class loginuser extends AppCompatActivity {
 
 
     }
-
+*/
 
 }

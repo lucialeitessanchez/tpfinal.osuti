@@ -19,7 +19,6 @@ public class listamedicos extends AppCompatActivity {
     private RecyclerViewAdaptador adaptadorMedico;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +37,7 @@ public class listamedicos extends AppCompatActivity {
 
     public List<Medico> obtenerMedicos(){
         List<Medico> medico=new ArrayList<>();
-        medico.add(new Medico("Paula Castillo","pediatra", 4607046,"Av.Aristobulo del Valle 6634",8-20));
+        medico.add(new Medico("Paula Castillo","Pediatra", 4607046,"Av.Aristobulo del Valle 6634",8-20));
        medico.add(new Medico("Federico Gauchat","Clinico",4607046,"Av. Aristóbulo del Valle 6634",8-20));
        medico.add(new Medico("Benjamin Sanchez","Cardiologia",4607046,"Av. Aristóbulo del Valle 6634",8-20));
        medico.add(new Medico("Nicolas Cejas","Clinico",4560067," Belgrano 3055",9-12));

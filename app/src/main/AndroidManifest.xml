@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".abmTurno"></activity>
+        <activity android:name=".menuUsuario"></activity>
+        <activity android:name=".abmTurno" />
         <activity android:name=".loginuser" />
         <activity android:name=".listamedicos" />
         <activity
@@ -25,7 +26,13 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".altauser" />
         <activity android:name=".UsuarioListActivity" />
-        <activity android:name=".domain.menuUser" />
+        <activity android:name=".RecyclerViewAdaptador" />
+        <activity android:name=".TurnoDao" />
+        <activity android:name=".UsuarioAdapter" />
+        <activity android:name=".UsuarioAppDB" />
+        <activity android:name=".UsuarioDao" />
+        <activity android:name=".ItemsTurno" />
+        <activity android:name=".ItemsTurnoDao"/>
     </application>
 
 </manifest>

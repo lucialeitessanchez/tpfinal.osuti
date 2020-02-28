@@ -1,5 +1,8 @@
 package tpfinal.osuti;
 
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.TypeConverter;
 
 import java.util.Date;
@@ -13,5 +16,14 @@ public class Coverters {
     @TypeConverter
     public static Long dateToTimestamp(Date date){
         return date == null ? null : date.getTime();
+    }
+
+    public static class menuUsuario extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_menu_usuario);
+        }
     }
 }

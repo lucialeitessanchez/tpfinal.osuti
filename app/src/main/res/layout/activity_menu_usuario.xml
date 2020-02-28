@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuUsuario">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="294dp"
+        android:layout_height="509dp"
+        android:layout_marginTop="@dimen/medio"
+        android:layout_marginLeft="@dimen/medio"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="199dp"
+            android:layout_height="192dp"
+            android:layout_marginLeft="@dimen/etiqueta"
+            app:srcCompat="@drawable/logoosuti" />
+
+        <Button
+            android:id="@+id/item_listamedicos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicos"
+            android:layout_marginTop="@dimen/etiqueta"
+            android:layout_marginLeft="@dimen/medio"
+            />
+
+        <Button
+            android:id="@+id/item_turnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turnos"
+            android:layout_marginLeft="@dimen/medio"
+            />
+
+        <Button
+            android:id="@+id/item_afiliacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Afiliarse"
+            android:layout_marginLeft="@dimen/medio"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
