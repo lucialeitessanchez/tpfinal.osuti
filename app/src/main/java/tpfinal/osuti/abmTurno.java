@@ -38,6 +38,8 @@ public class abmTurno extends AppCompatActivity {
         btnAlta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                setContentView(R.layout.altaturno);
                 Turno turnoAlta = new Turno();
 
                 //seteo de variables

@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toolbar;
 
 import java.util.ArrayList;
@@ -17,6 +20,8 @@ public class listamedicos extends AppCompatActivity {
 
     private RecyclerView recyclerViewMedico;
     private RecyclerViewAdaptador adaptadorMedico;
+
+    Spinner especialidad;
 
 
     @Override
@@ -31,7 +36,10 @@ public class listamedicos extends AppCompatActivity {
         adaptadorMedico=new RecyclerViewAdaptador(obtenerMedicos());
         recyclerViewMedico.setAdapter(adaptadorMedico);
 
-    }
+        /*especialidad = (Spinner) findViewById(R.id.spinnerEspecialidad);
+        ArrayAdapter<CharSequence> adapterEspe = ArrayAdapter.createFromResource(this,R.a, android.R.layout.simple_spinner_item);
+        especialidad.setAdapter(adapterEspe);*/
+}
 
 
 
