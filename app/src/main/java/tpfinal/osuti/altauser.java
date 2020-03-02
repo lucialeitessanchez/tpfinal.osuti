@@ -37,7 +37,7 @@ public class altauser extends AppCompatActivity {
         registrar = (Button) findViewById(R.id.buttonRegistrar);
 
         //si no rellena todos los campos no estara activo el boton registrar
-        if (validarCampos()){
+        if (!validarCampos()){
             registrar.setEnabled(true);
         }
         else {

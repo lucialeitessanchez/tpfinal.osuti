@@ -36,10 +36,10 @@ public class abmTurno extends AppCompatActivity {
         final Resources resources = getResources();
 
         btnAlta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                                       @Override
+                                       public void onClick(View v) {
 
-                setContentView(R.layout.altaturno);
+                /*
                 Turno turnoAlta = new Turno();
 
                 //seteo de variables
@@ -52,8 +52,13 @@ public class abmTurno extends AppCompatActivity {
                 setResult(Activity.RESULT_OK, intentResultado);
                 finish();
 
-            }
-        });
+            }*/
+                                           Intent i;
+                                           i = new Intent(abmTurno.this, Altaturno.class);
+                                           startActivity(i);
+                                       }
+
+                                   });
 
 
         btnModif.setOnClickListener(new View.OnClickListener() {

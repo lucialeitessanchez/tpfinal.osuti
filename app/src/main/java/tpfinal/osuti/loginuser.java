@@ -20,7 +20,6 @@ public class loginuser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loginuser);
 
-
         //me faltan las declaraciones del usuario y contraseña y la validacion
      usuario=(EditText)findViewById(R.id.etuser);
      contraseña=(EditText)findViewById(R.id.editTextPassuser);
@@ -30,7 +29,7 @@ public class loginuser extends AppCompatActivity {
          @Override
          public void onClick(View v) {
              //que valide y que despues vaya a la pantalla del menu usuario
-             if((usuario.getText().toString()).equals((contraseña.getText().toString()))){
+             if((usuario.getText().toString()).equals((contraseña.getText().toString())) && !(usuario.getText().toString().equals(""))){
             Intent i;
             i= new Intent(loginuser.this, menuUsuario.class);
             startActivity(i);
