@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class loginuser extends AppCompatActivity {
     EditText usuario,contraseña;
@@ -29,11 +30,14 @@ public class loginuser extends AppCompatActivity {
          @Override
          public void onClick(View v) {
              //que valide y que despues vaya a la pantalla del menu usuario
-             //if(){
+             if((usuario.getText().toString()).equals((contraseña.getText().toString()))){
             Intent i;
             i= new Intent(loginuser.this, menuUsuario.class);
             startActivity(i);
-             //}
+             }
+             else {
+                 Toast.makeText(getApplicationContext(),"usuario/contraseña invalidos",Toast.LENGTH_LONG).show();
+             }
          }
      });
 
