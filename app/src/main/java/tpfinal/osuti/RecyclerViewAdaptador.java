@@ -14,16 +14,16 @@ import tpfinal.osuti.domain.Medico;
 
 public class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdaptador.ViewHolder> {
 
-    public static class ViewHolder extends RecyclerView.ViewHolder{
+        public static class ViewHolder extends RecyclerView.ViewHolder{
         private TextView nombre,especialidad,direccion,horarios,telefono;
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(View itemView) {
             super(itemView);
-            nombre=(TextView)itemView.findViewById(R.id.tvnombre);
+            nombre=(TextView)itemView.findViewById(R.id.textViewNM);
             especialidad=(TextView)itemView.findViewById(R.id.tvEspecialidad);
             telefono=(TextView)itemView.findViewById(R.id.tvtelefonomedic);
-            direccion=(TextView)itemView.findViewById(R.id.tvdireccion);
-            horarios=(TextView)itemView.findViewById(R.id.tvhorarios);
+            direccion=(TextView)itemView.findViewById(R.id.textViewDir);
+            horarios=(TextView)itemView.findViewById(R.id.textViewHR);
         }
     }
 

@@ -9,8 +9,8 @@ public class Medico {
     private String direccion;
     private int horarios_de_atencion;
 
-
-
+    public Medico() {
+    }
 
     public Medico(String nombre, String especialidad, Integer telefono, String direccion, int horarios_de_atencion) {
         this.nombre = nombre;
