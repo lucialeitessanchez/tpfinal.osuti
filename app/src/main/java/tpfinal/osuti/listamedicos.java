@@ -20,14 +20,13 @@ public class listamedicos extends AppCompatActivity {
 
     private RecyclerView recyclerViewMedico;
     private RecyclerViewAdaptador adaptadorMedico;
-    private Spinner especialidadS;
 
 
 
     final String[] datos =
     new String[]{"Pediatra","Clinico","Odontologia","Cardiologia","Nutricion"};
 
-    ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,datos);
+
 
 
 
@@ -36,15 +35,12 @@ public class listamedicos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listamedicos);
 
-
         recyclerViewMedico=(RecyclerView)findViewById(R.id.recyclerMedico);
         recyclerViewMedico.setLayoutManager(new LinearLayoutManager(this));
 
-        adaptadorMedico=new RecyclerViewAdaptador(obtenerMedicos());
+        adaptadorMedico=new RecyclerViewAdaptador(this,obtenerMedicos());
         recyclerViewMedico.setAdapter(adaptadorMedico);
 
-        especialidadS = (Spinner) findViewById(R.id.spinnerEspecialidad);
-        especialidadS.setAdapter(adaptador);
 
 }
 

@@ -51,7 +51,7 @@ public class Turno implements Parcelable {
        // this.fecha = fecha;
         this.hora = hora;
     }
-
+    @Ignore
     public Turno(Integer nroafiliado, /*Date fecha,*/ int hora) {
         this.nroafiliado = nroafiliado;
         //this.fecha = fecha;

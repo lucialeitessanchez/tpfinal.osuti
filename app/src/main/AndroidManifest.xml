@@ -33,6 +33,7 @@
         <activity android:name=".UsuarioDao" />
         <activity android:name=".ItemsTurno" />
         <activity android:name=".ItemsTurnoDao"/>
+        <activity android:name=".Altaturno" />
     </application>
 
 </manifest>
