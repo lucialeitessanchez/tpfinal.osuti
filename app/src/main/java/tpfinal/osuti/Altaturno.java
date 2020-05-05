@@ -18,6 +18,9 @@ public class Altaturno extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.altaturno);
+
+
         idTurno = (EditText) findViewById(R.id.ETidTurno);
         nroAfiliado = (EditText) findViewById(R.id.ETnroafiliadoabm);
         fecha = (EditText) findViewById(R.id.ETdateabm);

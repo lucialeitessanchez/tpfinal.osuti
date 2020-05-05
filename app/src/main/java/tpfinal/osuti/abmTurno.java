@@ -12,7 +12,7 @@ import android.widget.EditText;
 
 import tpfinal.osuti.domain.Turno;
 
-public class abmTurno extends AppCompatActivity {
+public class abmTurno extends AppCompatActivity implements View.OnClickListener{
     Button btnAlta,btnModif,btnBaja;
     //public static final String TURNOSLISTA;
     EditText idTurno,nroAfiliado,fecha,hora;
@@ -21,9 +21,9 @@ public class abmTurno extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abm_turno);
+    }
 
-
-
+        /*
         btnAlta=(Button)findViewById(R.id.btnTurnonuevo);
         btnModif=(Button)findViewById(R.id.btnTurnoMofif);
         btnBaja=(Button)findViewById(R.id.btnTurnoeliminar);
@@ -33,11 +33,10 @@ public class abmTurno extends AppCompatActivity {
         fecha = (EditText)findViewById(R.id.ETdateabm);
         hora = (EditText)findViewById(R.id.ETHoraadm);
 
-        final Resources resources = getResources();
+        final Resources resources = getResources();*/
 
-        btnAlta.setOnClickListener(new View.OnClickListener() {
-                                       @Override
-                                       public void onClick(View v) {
+
+
 
                 /*
                 Turno turnoAlta = new Turno();
@@ -53,27 +52,25 @@ public class abmTurno extends AppCompatActivity {
                 finish();
 
             }*/
-                                           Intent i;
-                                           i = new Intent(abmTurno.this, Altaturno.class);
-                                           startActivity(i);
-                                       }
-
-                                   });
 
 
-        btnModif.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnTurnonuevo:
+                Intent i = new Intent(abmTurno.this, Altaturno.class );
+                startActivity(i);
+                break;
 
-            }
-        });
+            case R.id.btnTurnoMofif:
+                //modificar
+                startActivity(new Intent(abmTurno.this, Altaturno.class));
+                break;
 
-        btnBaja.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
+            case R.id.btnTurnoeliminar:
+                //borrar
+                startActivity(new Intent(abmTurno.this, Altaturno.class));
+                break;
+        }
     }
 }
